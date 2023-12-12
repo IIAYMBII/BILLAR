@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Reporte</title>
+
+  <!-- Estilos generales -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Estilos específicos para impresión */
+    @media print {
+      body {
+        font-size: 12px;
+      }
+
+      /* Ocultar elementos no deseados en la impresión */
+      .no-imprimir {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Formulario -->
+  <div id="formularioReporte">
+    <h2>Reporte</h2>
+    <form>
+      <!-- Contenido del formulario -->
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <!-- Más campos del formulario... -->
+
+      <!-- Botones para imprimir y enviar -->
+      <button type="button" onclick="window.print()">Imprimir</button>
+      <button type="submit" class="no-imprimir">Enviar</button>
+    </form>
+  </div>
+
+</body>
+</html>
